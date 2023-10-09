@@ -1,0 +1,75 @@
+main#main {
+    margin: 1rem;
+}
+
+main#main > p {
+    margin-block: 1rem;
+}
+
+main#main > form {
+    display: flex;
+    flex-direction: column;
+}
+
+main#main > form > label {
+    margin-block: 0.5rem;
+}
+
+main#main > form > input[type="number"] {
+    padding: 1rem;
+
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+main#main > form > button[type="submit"] {
+    margin-top: 1rem;
+    padding: 1rem;
+
+    background: #101b53;
+    color: #fff;
+
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+    align-self: flex-end;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.bad {
+    color: red;
+}
+
+.good {
+    color: #FFBF00;
+}
+
+main#main div#mensagem {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    margin: auto;
+
+    max-width: 800px;
+    min-height: calc(100vh - 8rem);
+    padding: 1rem;
+}
+
+.box {
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}

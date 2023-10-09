@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Viaje Bem - Pesquisa</title>
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/pesquisa.css" />
+
+    <script src="js/pesquisa.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>VIAJE BEM</h1>
+
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="pesquisa.html">PESQUISA</a></li>
+          <li><a href="dicas.html">DICAS</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <p>
+        Preencha os campos abaixo com os possíveis valores que você irá gastar
+      </p>
+
+      <form id="viagemForm" onsubmit="calcularDespesas()">
+        <label for="orcamento">Orçamento:</label>
+        <input
+          type="number"
+          id="orcamento"
+          name="orcamento"
+          placeholder="ex: 1500.00"
+          required
+        />
+
+        <label for="hospedagem">Hospedagem (despesa):</label>
+        <input
+          type="number"
+          id="hospedagem"
+          name="hospedagem"
+          placeholder="ex: 750.00"
+          required
+        />
+
+        <label for="transporte">Transporte (despesa):</label>
+        <input
+          type="number"
+          id="transporte"
+          name="transporte"
+          placeholder="ex: 200.00"
+          required
+        />
+
+        <label for="alimentacao">Alimentação (despesa):</label>
+        <input
+          type="number"
+          id="alimentacao"
+          name="alimentacao"
+          placeholder="ex: 350.00"
+          required
+        />
+
+        <label for="extras">Extras (despesa):</label>
+        <input
+          type="number"
+          id="extras"
+          name="extras"
+          placeholder="ex: 330.00"
+          required
+        />
+
+        <button type="submit">Calcular</button>
+      </form>
+    </main>
+  </body>
+</html>

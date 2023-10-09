@@ -1,0 +1,90 @@
+header {
+  height: 16rem;
+
+  margin-bottom: 3rem;
+}
+
+main {
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+main > p {
+  margin-block: 3rem;
+}
+
+.buttons {
+  position: relative;
+
+  background: #101b53;
+  color: #fff;
+
+  width: 100%;
+
+  margin-block: 1rem;
+  padding: 2rem;
+}
+
+.buttons p {
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  font-size: 20px;
+
+  text-align: center;
+}
+
+.buttons ul {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 4rem;
+
+  margin-top: 4rem;
+}
+
+.buttons ul li {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff;
+
+  padding: 0.5rem;
+
+  bottom: -30px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  border-radius: 10px;
+}
+
+.buttons ul li:nth-child(1) {
+  left: 25%;
+}
+
+.buttons ul li:nth-child(2) {
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.buttons ul li:nth-child(3) {
+  right: 25%;
+}
+
+.buttons ul li span {
+  color: #101b53;
+
+  font-weight: 400;
+  font-size: 28px;
+}
